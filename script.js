@@ -2,13 +2,10 @@ a = 0;
 i = 1;
 function add(){
 	a+=i;
+	loop();
 }
 
 function loop(){
-	while true{
-		const display = document.getElementById("count");
-		display.textContent(a);
-	}
+	document.getElementById("count").textContent = a;
 }
 
-loop()
